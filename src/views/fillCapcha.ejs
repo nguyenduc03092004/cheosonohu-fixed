@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pass capcha</title>
+</head>
+
+<body>
+    <img src="data:image/png;base64,<%=valueImage %>">
+
+    <form action="/inputCaptcha" method="post">
+        <label for="capchaValue">điền mã capcha nhìn thấy vào đây</label>
+        <input type="text" name="capchaValue">
+        <button type="submit">submit</button>
+    </form>
+
+</body>
+
+</html>
